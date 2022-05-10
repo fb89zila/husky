@@ -133,7 +133,7 @@
     <joint name="lidar_joint" type="fixed">
       <parent link="top_plate_link" />
       <child link="lidar_link"/>
-      <origin xyz="0.2206 0.0 0.008" rpy="0 0 0" />
+      <origin xyz="0 0.0 0.0275" rpy="0 0 0" />
       <!--
       <parent link="base_link"/>
       <child link="lidar_link"/>
@@ -165,9 +165,9 @@
     </link>
 
     <joint name="camera_joint" type="fixed">
-      <parent link="base_link"/>
+      <parent link="top_plate_link"/>
       <child link="camera_link"/>
-      <origin xyz="0.4 0 0.15" rpy="0 0 0"/>
+      <origin xyz="0.353 0.0 -0.01" rpy="0 0 0"/>
     </joint>
 
     <link name="camera_depth_frame"/>
