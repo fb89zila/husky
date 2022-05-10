@@ -13,7 +13,7 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
 
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare("husky_viz"), "rviz", "test.rviz"]
+        [FindPackageShare("husky_viz"), "rviz", "custom.rviz"]
     )
 
     node_rviz = Node(
